@@ -77,8 +77,3 @@ API_BASE_URL=your_api_url
 
 ## Contact
 For support or queries, please contact [olashiku@gmail.com]
-
-## Acknowledgments
-- List any third-party libraries or resources used
-- Credits to contributors
-- Special thanks to the healthcare professionals who provided domain expertise
