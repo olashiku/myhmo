@@ -36,9 +36,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
@@ -97,26 +98,25 @@ dependencies {
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
     implementation 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
     / *LiveData lib*/
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-alpha03'
-    implementation 'androidx.lifecycle:lifecycle-runtime:2.2.0-alpha03'
-    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.2.0-alpha03'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.8.7'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.8.7'
     kapt "android.arch.lifecycle:compiler:1.1.1"
     //Room
-    implementation 'androidx.room:room-runtime:2.1.0'
-    annotationProcessor 'androidx.room:room-compiler:2.1.0'
-    kapt "android.arch.persistence.room:compiler:1.1.1"
+    implementation 'androidx.room:room-runtime:2.6.1'
+   kapt  'androidx.room:room-compiler:2.6.1'
     //MultiDex
     implementation 'androidx.multidex:multidex:2.0.1'
     // Koin Android ViewModel feature
-    implementation 'org.koin:koin-android-viewmodel:2.0.0-rc-2'
-    implementation "org.koin:koin-android:2.0.0-rc-2"
-    implementation "org.koin:koin-core:2.0.0-rc-2"
+    implementation 'org.koin:koin-android-viewmodel:4.1.0-Beta3'
+    implementation "org.koin:koin-android:4.1.0-Beta3"
+    implementation "org.koin:koin-core:4.1.0-Beta3"
     // AndroidX (based on koin-android)
     // Koin AndroidX Scope feature
-    implementation "org.koin:koin-androidx-scope:2.0.0-rc-2"
+    implementation "org.koin:koin-androidx-scope:4.1.0-Beta3"
     // Koin AndroidX ViewModel feature
-    implementation "org.koin:koin-androidx-viewmodel:2.0.0-rc-2"
-    implementation "org.koin:koin-java:2.0.0-rc-2"
+    implementation "org.koin:koin-androidx-viewmodel:4.1.0-Beta3"
+    implementation "org.koin:koin-java:3.0.0"
     //implementation "org.koin:koin-android-architecture:2.0.0-rc-2"
 
 
